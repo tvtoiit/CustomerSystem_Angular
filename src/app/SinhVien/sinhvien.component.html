@@ -1,0 +1,8 @@
+<div *ngIf="isLoggedIn; else notLoggedIn">
+    <p>cuoi {{ user.tuoi }}</p>
+</div>
+<ng-template #notLoggedIn>
+    <p>Please login to continue.</p>
+</ng-template>
+
+
